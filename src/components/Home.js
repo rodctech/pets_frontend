@@ -19,7 +19,7 @@ class Home extends Component {
 
   onLogoutClick() {
     axios
-      .delete("http://localhost:3001/logout", { withCredentials: true })
+      .delete("https://pets-backend-ctd.herokuapp.com/logout", { withCredentials: true })
       .then(response => {
         this.props.handleLogout();
       })

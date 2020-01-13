@@ -20,6 +20,7 @@ class Registration extends Component {
   }
 
   handleSubmit(event) {
+    console.log("Registration Clicked");
     const {
       first_name,
       last_name,
@@ -30,7 +31,7 @@ class Registration extends Component {
     } = this.state;
     axios
       .post(
-        "http://localhost:3001/registrations",
+        "https://pets-backend-ctd.herokuapp.com/registrations",
         {
           user: {
             first_name: first_name,
